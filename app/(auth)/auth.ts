@@ -1,3 +1,4 @@
+// app/(auth)/auth.ts
 import { compare } from 'bcrypt-ts';
 import NextAuth, { type DefaultSession } from 'next-auth';
 import Credentials from 'next-auth/providers/credentials';
@@ -15,7 +16,6 @@ declare module 'next-auth' {
       type: UserType;
     } & DefaultSession['user'];
   }
-
   interface User {
     id?: string;
     email?: string | null;
@@ -39,31 +39,30 @@ export const {
   ...authConfig,
   providers: [
     Credentials({
-      credentials: {},
+      name: 'Regular',
+      credentials: {
+        email: { label: 'Email', type: 'text' },
+        password: { label: 'Passwort', type: 'password' },
+      },
       async authorize({ email, password }: any) {
         const users = await getUser(email);
-
         if (users.length === 0) {
           await compare(password, DUMMY_PASSWORD);
           return null;
         }
-
         const [user] = users;
-
         if (!user.password) {
           await compare(password, DUMMY_PASSWORD);
           return null;
         }
-
         const passwordsMatch = await compare(password, user.password);
-
         if (!passwordsMatch) return null;
-
         return { ...user, type: 'regular' };
       },
     }),
     Credentials({
       id: 'guest',
+      name: 'Gast',
       credentials: {},
       async authorize() {
         const [guestUser] = await createGuestUser();
@@ -77,7 +76,6 @@ export const {
         token.id = user.id as string;
         token.type = user.type;
       }
-
       return token;
     },
     async session({ session, token }) {
@@ -85,7 +83,6 @@ export const {
         session.user.id = token.id;
         session.user.type = token.type;
       }
-
       return session;
     },
   },
