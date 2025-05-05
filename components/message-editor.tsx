@@ -1,25 +1,18 @@
-'use client';
-
-import { ChatRequestOptions, Message } from 'ai';
-import { Button } from './ui/button';
-import { Dispatch, SetStateAction, useEffect, useRef, useState } from 'react';
-import { Textarea } from './ui/textarea';
-import { deleteTrailingMessages } from '@/app/(chat)/actions';
-import { UseChatHelpers } from '@ai-sdk/react';
-
-export type MessageEditorProps = {
-  message: Message;
-  setMode: Dispatch<SetStateAction<'view' | 'edit'>>;
-  setMessages: UseChatHelpers['setMessages'];
-  reload: UseChatHelpers['reload'];
-};
-
 export function MessageEditor({
   message,
   setMode,
   setMessages,
   reload,
 }: MessageEditorProps) {
+  'use client';
+
+  import { ChatRequestOptions, Message } from 'ai';
+  import { Button } from './ui/button';
+  import { Dispatch, SetStateAction, useEffect, useRef, useState } from 'react';
+  import { Textarea } from './ui/textarea';
+  import { deleteTrailingMessages } from '@/app/chat/actions';
+  import { UseChatHelpers } from '@ai-sdk/react';
+
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
 
   const [draftContent, setDraftContent] = useState<string>(message.content);

@@ -1,23 +1,22 @@
 'use client';
-// app/chat/page.tsx
+
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 
-type ChatSummary = { id: string; title: string };
-
 export default function ChatIndexPage() {
-  const [chats, setChats] = useState<ChatSummary[]>([]);
+  const [chats, setChats] = useState<{ id: string; title: string }[]>([]);
 
   useEffect(() => {
     fetch('/api/chat')
       .then((res) => res.json())
-      .then((data: ChatSummary[]) => setChats(data))
+      .then(setChats)
       .catch(console.error);
   }, []);
 
   return (
-    <>
-      <ul className="space-y-4">
+    <main className="p-8">
+      <h1 className="text-2xl font-bold mb-4">Deine Chats</h1>
+      <ul className="space-y-2">
         {chats.map((chat) => (
           <li key={chat.id}>
             <Link
@@ -29,23 +28,25 @@ export default function ChatIndexPage() {
           </li>
         ))}
       </ul>
-
       <button
-        onClick={() =>
-          fetch('/api/chat', {
+        onClick={async () => {
+          const id = crypto.randomUUID();
+          await fetch('/api/chat', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({}),
-          })
-            .then((res) => res.json())
-            .then((newChat: { id: string }) => {
-              window.location.href = `/chat/${newChat.id}`;
-            })
-        }
-        className="mt-8 px-4 py-2 bg-green-600 text-white rounded"
+            body: JSON.stringify({
+              id,
+              message: { id: crypto.randomUUID(), parts: [''] },
+              selectedChatModel: 'chat-model-default',
+              selectedVisibilityType: 'public',
+            }),
+          });
+          window.location.href = `/chat/${id}`;
+        }}
+        className="mt-6 px-4 py-2 bg-green-600 text-white rounded"
       >
         Neuen Chat starten
       </button>
-    </>
+    </main>
   );
 }

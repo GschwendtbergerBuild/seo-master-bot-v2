@@ -1,0 +1,162 @@
+[1m[7m%[27m[1m[0m                                                                   [0m[27m[24m[J23volt@MacBook-Air-von-Sascha ai-chatbot % [K[?2004h[7mpnpm dev[27m[8D[27mp[27mn[27mp[27mm[27m [27md[27me[27mv[?2004l
+
+> ai-chatbot@3.0.17 dev /Users/23volt/ai-chatbot
+> next dev --turbo
+
+   [1m[38;2;173;127;168m▲ Next.js 15.3.0-canary.31[39m[22m (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://172.20.10.4:3000
+   - Environments: .env.local
+   - Experiments (use with caution):
+     [1m✓[22m ppr
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Compiled in 354ms
+ [32m[1m✓[22m[39m Ready in 1354ms
+ [37m[1m○[22m[39m Compiling /_not-found/page ...
+ [32m[1m✓[22m[39m Compiled /_not-found/page in 1261ms
+ GET /api/auth/guest?redirectUrl=http%3A%2F%2Flocalhost%3A3000%2F [33m404[39m in 1445ms
+ GET /api/auth/guest?redirectUrl=http%3A%2F%2Flocalhost%3A3000%2F [33m404[39m in 31ms
+^C[?25h
+[1m[7m%[27m[1m[0m                                                                   [0m[27m[24m[J23volt@MacBook-Air-von-Sascha ai-chatbot % [K[?2004h[7mpnpm dev > dev.log 2>&1[27m
+[K[A[43C[27mp[27mn[27mp[27mm[27m [27md[27me[27mv[27m [27m>[27m [27md[27me[27mv[27m.[27ml[27mo[27mg[27m [27m2[27m>[27m&[27m1[1B[K[?2004l
+pnpm dev > dev.log 2>&1
+
+^C[1m[7m%[27m[1m[0m                                                                   [0m[27m[24m[J23volt@MacBook-Air-von-Sascha ai-chatbot % [K[?2004h[7mpnpm dev > dev.log 2>&1[27m
+[K[A[43C[27mp[27mn[27mp[27mm[27m [27md[27me[27mv[27m [27m>[27m [27md[27me[27mv[27m.[27ml[27mo[27mg[27m [27m2[27m>[27m&[27m1[1B[K[?2004l
+^C[1m[7m%[27m[1m[0m                                                                   [0m[27m[24m[J23volt@MacBook-Air-von-Sascha ai-chatbot % [K[?2004h[7mrm -rf app/api/auth[27m[19D[27mr[27mm[27m [27m-[27mr[27mf[27m [27ma[27mp[27mp[27m/[27ma[27mp[27mi[27m/[27ma[27mu[27mt[27mh[?2004l
+[1m[7m%[27m[1m[0m                                                                   [0m[27m[24m[J23volt@MacBook-Air-von-Sascha ai-chatbot % [K[?2004h[7mrm -rf app/(auth)[27m
+[K[A[43C[27mr[27mm[27m [27m-[27mr[27mf[27m [27ma[27mp[27mp[27m/[27m([27ma[27mu[27mt[27mh[27m)[1B[K[A[60C[?2004l[1Bzsh: number expected
+[1m[7m%[27m[1m[0m                                                                   [0m[27m[24m[J23volt@MacBook-Air-von-Sascha ai-chatbot % [K[?2004h[7mrm -rf app/api/auth[27m[19D[27mr[27mm[27m [27m-[27mr[27mf[27m [27ma[27mp[27mp[27m/[27ma[27mp[27mi[27m/[27ma[27mu[27mt[27mh[?2004l
+[1m[7m%[27m[1m[0m                                                                   [0m[27m[24m[J23volt@MacBook-Air-von-Sascha ai-chatbot % [K[?2004h[7mrm -rf 'app/(auth)'[27m[19D[27mr[27mm[27m [27m-[27mr[27mf[27m [27m'[27ma[27mp[27mp[27m/[27m([27ma[27mu[27mt[27mh[27m)[27m'[?2004l
+[1m[7m%[27m[1m[0m                                                                   [0m[27m[24m[J23volt@MacBook-Air-von-Sascha ai-chatbot % [K[?2004h[7mfind app -maxdepth 2 -pr[7mi[7mnt[27m[K[A[40C[27mf[27mi[27mn[27md[27m [27ma[27mp[27mp[27m [27m-[27mm[27ma[27mx[27md[27me[27mp[27mt[27mh[27m [27m2[27m [27m-[27mp[27mri[27mn[27mt[?2004l
+app
+app/favicon.ico
+app/chat
+app/chat/embed
+app/chat/actions.ts
+app/chat/layout.tsx
+app/chat/[id]
+app/chat/page.tsx
+app/layout.tsx
+app/api
+app/api/chat
+app/page.tsx
+app/globals.css
+[1m[7m%[27m[1m[0m                                                                   [0m[27m[24m[J23volt@MacBook-Air-von-Sascha ai-chatbot % [K[?2004h[7mpnpm dev[27m
+[K[A[43C[27mp[27mn[27mp[27mm[27m [27md[27me[27mv[1B[K[?2004l
+
+> ai-chatbot@3.0.17 dev /Users/23volt/ai-chatbot
+> next dev --turbo
+
+   [1m[38;2;173;127;168m▲ Next.js 15.3.0-canary.31[39m[22m (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://172.20.10.4:3000
+   - Environments: .env.local
+   - Experiments (use with caution):
+     [1m✓[22m ppr
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Compiled in 371ms
+ [32m[1m✓[22m[39m Ready in 1297ms
+ [37m[1m○[22m[39m Compiling /_not-found/page ...
+ [32m[1m✓[22m[39m Compiled /_not-found/page in 739ms
+ [31m[1m⨯[22m[39m ./app/layout.tsx:2:1
+[1m[31mModule not found[39m[22m: Can't resolve [32m'@/globals.css'[39m
+[0m [90m 1 |[39m [90m// app/layout.tsx[39m[0m
+[0m[31m[1m>[22m[39m[90m 2 |[39m [36mimport[39m [32m'@/globals.css'[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 3 |[39m[0m
+[0m [90m 4 |[39m [36mexport[39m [36mconst[39m metadata [33m=[39m {[0m
+[0m [90m 5 |[39m   title[33m:[39m [32m'AI Chat'[39m[33m,[39m[0m
+
+Import map: aliased to relative './globals.css' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ [37m[1m○[22m[39m Compiling /_error ...
+ [32m[1m✓[22m[39m Compiled /_error in 505ms
+ GET /api/auth/guest?redirectUrl=http%3A%2F%2Flocalhost%3A3000%2F [31m500[39m in 1375ms
+ [31m[1m⨯[22m[39m ./app/layout.tsx:2:1
+[1m[31mModule not found[39m[22m: Can't resolve [32m'@/globals.css'[39m
+[0m [90m 1 |[39m [90m// app/layout.tsx[39m[0m
+[0m[31m[1m>[22m[39m[90m 2 |[39m [36mimport[39m [32m'@/globals.css'[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 3 |[39m[0m
+[0m [90m 4 |[39m [36mexport[39m [36mconst[39m metadata [33m=[39m {[0m
+[0m [90m 5 |[39m   title[33m:[39m [32m'AI Chat'[39m[33m,[39m[0m
+
+Import map: aliased to relative './globals.css' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ GET /api/auth/guest?redirectUrl=http%3A%2F%2Flocalhost%3A3000%2F [31m500[39m in 16ms
+ [32m[1m✓[22m[39m Compiled in 1066ms
+ [32m[1m✓[22m[39m Compiled /_not-found/page in 173ms
+ GET /api/auth/guest?redirectUrl=http%3A%2F%2Flocalhost%3A3000%2F [33m404[39m in 551ms
+ [32m[1m✓[22m[39m Compiled /favicon.ico in 420ms
+ GET /favicon.ico?favicon.46d6a819.ico [32m200[39m in 684ms
+^C[?25h
+[1m[7m%[27m[1m[0m                                                                   [0m[27m[24m[J23volt@MacBook-Air-von-Sascha ai-chatbot % [K[?2004h[7mpnpm dev[27m[8D[27mp[27mn[27mp[27mm[27m [27md[27me[27mv[?2004l
+
+> ai-chatbot@3.0.17 dev /Users/23volt/ai-chatbot
+> next dev --turbo
+
+   [1m[38;2;173;127;168m▲ Next.js 15.3.0-canary.31[39m[22m (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://172.20.10.4:3000
+   - Environments: .env.local
+   - Experiments (use with caution):
+     [1m✓[22m ppr
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Compiled in 223ms
+ [32m[1m✓[22m[39m Ready in 1023ms
+ [37m[1m○[22m[39m Compiling /_not-found/page ...
+ [32m[1m✓[22m[39m Compiled /_not-found/page in 1213ms
+ GET /api/auth/guest?redirectUrl=http%3A%2F%2Flocalhost%3A3000%2F [33m404[39m in 1376ms
+ GET /api/auth/guest?redirectUrl=http%3A%2F%2Flocalhost%3A3000%2F [33m404[39m in 28ms
+^C[?25h
+[1m[7m%[27m[1m[0m                                                                   [0m[27m[24m[J23volt@MacBook-Air-von-Sascha ai-chatbot % [K[?2004h[7mcd ~/ai-chatbot[27m
+[7mgit status[27m[K
+[K[A[A[43C[27mc[27md[27m [27m~[27m/[27ma[27mi[27m-[27mc[27mh[27ma[27mt[27mb[27mo[27mt[1B[27mg[27mi[27mt[27m [27ms[27mt[27ma[27mt[27mu[27ms[1B[K[?2004l
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mdeleted:    app/(auth)/actions.ts[m
+	[31mdeleted:    app/(auth)/api/auth/[...nextauth]/route.ts[m
+	[31mdeleted:    app/(auth)/api/auth/guest/route.ts[m
+	[31mdeleted:    app/(auth)/auth.config.ts[m
+	[31mdeleted:    app/(auth)/auth.ts[m
+	[31mdeleted:    app/(auth)/login/page.tsx[m
+	[31mdeleted:    app/(auth)/register/page.tsx[m
+	[31mmodified:   app/chat/[id]/layout.tsx[m
+	[31mmodified:   app/chat/[id]/page.tsx[m
+	[31mmodified:   app/chat/page.tsx[m
+	[31mmodified:   app/layout.tsx[m
+	[31mmodified:   components/message-editor.tsx[m
+	[31mmodified:   components/model-selector.tsx[m
+	[31mmodified:   package.json[m
+	[31mmodified:   pnpm-lock.yaml[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mai-chatbot-small.zip[m
+	[31mapp/api/[m
+	[31mapp/chat/[id]/ChatClient.tsx[m
+	[31mapp/chat/actions.ts[m
+	[31mapp/chat/embed/[m
+	[31mapp/page.tsx[m
+	[31mdev.log[m
+	[31mterminal.log[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[1m[7m%[27m[1m[0m                                                                   [0m[27m[24m[J23volt@MacBook-Air-von-Sascha ai-chatbot % [K[?2004h

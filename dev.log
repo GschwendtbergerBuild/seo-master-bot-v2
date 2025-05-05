@@ -1,0 +1,20 @@
+
+> ai-chatbot@3.0.17 dev /Users/23volt/ai-chatbot
+> next dev --turbo
+
+   ▲ Next.js 15.3.0-canary.31 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://172.20.10.4:3000
+   - Environments: .env.local
+   - Experiments (use with caution):
+     ✓ ppr
+
+ ✓ Starting...
+ ✓ Compiled in 189ms
+ ✓ Ready in 963ms
+ ○ Compiling /_not-found/page ...
+ ✓ Compiled /_not-found/page in 1506ms
+ GET /api/auth/guest?redirectUrl=http%3A%2F%2Flocalhost%3A3000%2F 404 in 1677ms
+ ✓ Compiled /favicon.ico in 413ms
+ GET /favicon.ico?favicon.46d6a819.ico 200 in 659ms
+[?25h
